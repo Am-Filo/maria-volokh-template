@@ -1,0 +1,36 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: ФИО Специалиста
+        type: text
+        span: left
+        required: true
+    team_img:
+        label: Фото специалиста
+        type: fileupload
+        mode: image
+        span: right
+        imageHeight: 190
+        imageWidth: 260
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+    is_active:
+        label: Включена?
+        type: switch
+        span: left
+    text:
+        label: Информация
+        span: full
+        size: large
+        type: textarea
+        required: true

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Option
+
+# Model Form Field configuration
+form: $/gms/main/models/option/fields.yaml
+
+# Model Class name
+modelClass: Gms\Main\Models\Option
+
+# Default redirect location
+defaultRedirect: gms/main/options
+
+# Create page
+create:
+    title: Create Option
+    redirect: gms/main/options/update/:id
+    redirectClose: gms/main/options
+
+# Update page
+update:
+    title: Edit Option
+    redirect: gms/main/options
+    redirectClose: gms/main/options
+
+# Preview page
+preview:
+    title: Preview Option

@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    name:
+        label: ФИО
+        searchable: true
+    phone:
+        label: Телефон
+        searchable: true

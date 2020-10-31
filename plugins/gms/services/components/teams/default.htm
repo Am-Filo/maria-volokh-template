@@ -1,0 +1,22 @@
+{% set teams = __SELF__.getTeam() %}
+<section class="team">
+	<div class="container">
+		<div class="col-md-12 title-team">
+			<h2>Команда специалистов</h2>
+		</div>
+		<div class="clearfix"></div>
+		<div class="team-vl">
+			{% for team in teams %}
+			{% if team.is_active %}
+			<div class="team-item col-md-4 col-sm-4 col-xs-12">
+				<div class="team-wrap">
+					<img src="{{ team.team_img.path }}" alt="">
+					<p class="name-item-team">{{ team.title }}</p>
+					<i>{{ team.text }}</i>
+				</div>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

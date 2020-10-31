@@ -1,0 +1,18 @@
+article:
+  label: Статья
+  view:
+    list: $/gms/blog/models/article/columns.yaml
+    toolbarButtons: add|remove
+  manage:
+    form: $/gms/blog/models/article/fields.yaml
+    showCheckboxes: true
+    showSearch: true
+video_in_article:
+  label: Видео
+  view:
+    list: $/gms/blog/models/video/columns.yaml
+    toolbarButtons: add|remove|create
+  manage:
+    form: $/gms/blog/models/video/fields.yaml
+    showCheckboxes: true
+    showSearch: true

@@ -1,0 +1,35 @@
+description = "Хлебные кношки"
+==
+<section class="breadcrumbs">
+	<div class="container">
+		<ul class="ul-breadcrumbs">
+			
+			<li><a href="/">Главная</a></li>
+			<li class="separator">/</li>
+			
+			{% if this.page.title == 'Статья' %}
+				<li><a href="/blog">Блог</a></li>
+				<li class="separator">/</li>
+				<li>{{ article.title }}</li>
+			{% endif %}
+			
+			{% if this.page.title == 'Услуга' %}
+				{% set service = services.getService() %}
+				<li><a href="/services">Услуги</a></li>
+				<li class="separator">/</li>
+				<li>{{ service.title }}</li>
+			{% endif %}
+			
+			{% if this.page.title == 'Отзыв' %}
+				<li><a href="/reviews">Отзывы</a></li>
+				<li class="separator">/</li>
+				<li>{{ review.name }}</li>
+			{% endif %}
+			
+			{% if this.page.title != 'Статья' or this.page.title != 'Услуга' or this.page.title != 'Отзыв'%}
+				<li>{{ this.page.title }}</li>
+			{% endif %}
+			
+		</ul>
+	</div>
+</section>

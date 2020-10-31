@@ -1,0 +1,15 @@
+{% set reviews = __SELF__.ViewReviewsAll() %}
+{% for review in reviews %}
+{% if	review.is_active %}
+<div class="col-md-4 col-sm-6 col-xs-12" style="margin-bottom: 25px;">
+	<div class="wr-rewiews-one">
+		<p class="reviewer">
+			<a href="reviews/{{ review.slug }}">{{ review.name }}</a>
+		</p>
+		<p class="text-review">
+			{{ html_limit(review.text|raw, 50) }}
+		</p>
+	</div>
+</div>
+{% endif %}
+{% endfor %}

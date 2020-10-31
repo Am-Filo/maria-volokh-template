@@ -1,0 +1,41 @@
+{% set stage_1 = __SELF__.viewStage_1() %}
+{% set stage_2 = __SELF__.viewStage_2() %}
+{% set stage_3 = __SELF__.viewStage_3() %}
+<section class="stages">
+	<div class="container">
+		<p class="h1">Этапы подготовки и проведения операции</p>
+		<div class="clearfix"></div>
+		<div class="col-md-4 stage">
+			{% for stage in stage_1 %}
+			<div class="stage-item">
+				<div class="img-stage-item">
+					<img src="{{ stage.stage_img.path }}" alt="{{ stage.title }}">
+				</div>
+				<p><span class="number-stage">{{ stage.id }}.</span>{{ stage.title }}</p>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="col-md-4 stage">
+			{% for stage in stage_2 %}
+			<div class="stage-item">
+				<div class="img-stage-item">
+					<img src="{{ stage.stage_img.path }}" alt="{{ stage.title }}">
+				</div>
+				<p><span class="number-stage">{{ stage.id }}.</span>{{ stage.title }}</p>
+			</div>
+			{% endfor %}
+		</div>
+
+		<div class="col-md-4 stage">
+			{% for stage in stage_3 %}
+			<div class="stage-item">
+				<div class="img-stage-item">
+					<img src="{{ stage.stage_img.path }}" alt="{{ stage.title }}">
+				</div>
+				<p><span class="number-stage">{{ stage.id }}.</span>{{ stage.title }}</p>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

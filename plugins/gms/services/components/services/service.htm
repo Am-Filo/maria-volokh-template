@@ -1,0 +1,16 @@
+{% set service = __SELF__.getService() %}
+{% if service.is_active %}
+<section class="service">
+	<div class="container">
+		<div class="col-md-4 img-service">
+			<img src="{{ service.service_img.path }}" alt="">
+		</div>
+		<div class="col-md-8 service-text">
+			<h1>{{ service.title }}</h1>
+			<p>
+				{{ service.text|raw }}
+			</p>
+		</div>
+	</div>
+</section>
+{% endif %}

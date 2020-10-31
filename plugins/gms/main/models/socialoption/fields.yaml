@@ -1,0 +1,22 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Название соц сети
+        type: text
+        span: full
+        requaired: true
+    icon:
+        label: иконка
+        type: text
+        span: left
+        requaired: true
+        commentHtml: true
+        comment: 'Выберите иконку с <a href="http://fontawesome.io/icons/#brand" target="_blank">ресурса</a>, скопируйте название иконки например <i>fa-twitter</i> и вставьте в тектовое поле.'
+    link:
+        label: Ссылка
+        type: text
+        span: right
+        requaired: true

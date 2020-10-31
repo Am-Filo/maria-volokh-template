@@ -1,0 +1,58 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Название услуги
+        type: text
+        span: left
+        required: true
+    service_img:
+        label: Изображение раздела
+        type: fileupload
+        mode: image
+        span: right
+        imageHeight: 190
+        imageWidth: 260
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+    slug:
+        label: Slug
+        preset:
+            field: title
+            type: slug
+        span: left
+        type: text
+        required: true
+        comment: url отзыва
+    is_active:
+        label: Включена?
+        type: switch
+        span: left
+    text:
+        label: Информация
+        span: full
+        type: richeditor
+        required: true
+    price_block:
+        label: Стоимость услуги
+        span: full
+        type: richeditor
+        required: true
+        toolbarButtons: fullscreen|bold|italic|underline|strikeThrough|insertLink|insertTable|html
+    operations_in_service:
+        label: Операции
+        span: full
+        oc.commentPosition: ''
+        nameForm: id
+        descriptionForm: description
+        type: partial
+        path: field_services_key

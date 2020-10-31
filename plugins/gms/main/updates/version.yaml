@@ -1,0 +1,6 @@
+1.0.1:
+  - Run table migrations
+  - create_options_table.php
+  - create_socialoptions_table.php
+  - create_option_link_key_table.php
+  - create_sliders_table.php

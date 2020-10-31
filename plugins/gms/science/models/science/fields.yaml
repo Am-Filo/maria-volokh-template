@@ -1,0 +1,59 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Заголовок научной статьи
+        type: text
+        span: left
+        required: true
+    image_science:
+        label: Изображение научной статьи
+        type: fileupload
+        mode: image
+        span: right
+        imageHeight: 255
+        imageWidth: 350
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+    slug:
+        label: Slug
+        preset:
+            field: title
+            type: slug
+        span: left
+        type: text
+        required: true
+        comment: url научной статьи
+    is_active:
+        label: Включить научной статьи
+        type: switch
+        span: left
+    text_1:
+        label: Верхний блок научной статьи
+        type: richeditor
+        size: large
+        span: full
+        required: true
+    text_2:
+        label: Нижний блок научной статьи
+        type: richeditor
+        size: large
+        span: full
+        required: true
+    video_in_science:
+        label: Видео
+        span: full
+        oc.commentPosition: ''
+        nameForm: id
+        descriptionForm: description
+        type: partial
+        path: field_science_key

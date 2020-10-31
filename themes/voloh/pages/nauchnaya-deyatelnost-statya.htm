@@ -1,0 +1,18 @@
+title = "Научная деятельность статья"
+url = "/science/:slug"
+layout = "main-template"
+is_hidden = 0
+
+[sciences]
+slug = "{{ :slug }}"
+==
+<section class="blog-article">
+	<div class="container">
+		<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 vl-blog-info">
+			{% partial "options::info_blog" %}
+			<hr class="hidden-lg hidden-md hidden-sm"/>
+		</div>
+		<div class="clearfix hidden-lg hidden-md hidden-sm"></div>
+		{% component 'sciences' %}
+	</div>
+</section>

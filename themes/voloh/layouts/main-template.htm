@@ -1,0 +1,27 @@
+description = "главный шаблок сайта"
+
+[options]
+
+[feedbacks]
+==
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	{% partial "template/head" %}
+</head>
+<body>
+{% partial "template/header" %}
+
+{% if this.page.title != 'Главная страница'%}
+{% partial "sections/breadcrumbs" %}
+{% endif %}
+
+{% page %}
+
+{% partial "sections/form" %}
+{% partial "template/modal" %}
+{% partial "template/footer" %}
+{% partial "template/styles-scripts" %}
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% for slider in sliders %}
+{% if slider.is_active %}
+<div>
+	<div class="col-md-12 header-sl-vh">
+		<div class="header-sl-wrap" style="background-image: url({{ slider.img_slider.path }});"></div>
+	</div>
+</div>
+{% endif %}
+{% endfor %}

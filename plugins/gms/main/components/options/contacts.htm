@@ -1,0 +1,19 @@
+<div class="phone-ft">
+	<i class="fa fa-phone fa-lg"></i>
+	<a href="tel:{{ options.phone_b }}"><span>{{ options.phone_b }}</span></a>
+</div>
+<div class="mail-ft">
+	<i class="fa fa-globe fa-lg"></i>
+	<a href="mailto:{{ options.mail_b }}">{{ options.mail_b }}</a>
+</div>
+<div class="adress-ft">
+	<i class="fa fa-pin fa-lg"></i>
+	<span>{{ options.contact_b }}</span>
+</div>
+<div class="social-ft">
+	{% for social in options.links_in_option %}
+	<a href="{{ social.link }}" target="_blank">
+		<i class="fa {{ social.icon }} fa-lg"></i>
+	</a>
+	{% endfor %}
+</div>

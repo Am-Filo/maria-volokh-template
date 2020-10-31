@@ -1,0 +1,69 @@
+description = "Шапка сайта"
+==
+<header>
+	<section class="header-phone">
+		<div class="container">
+			<div class="col-md-3 col-sm-3 logo">
+				<img src="{{'assets/img/logo/logo-1.png'|theme }}" alt="">
+				<a href="/">facetransplatation.ru</a>
+			</div>
+			<div class="col-md-7 col-sm-9 col-xs-12 right-info">
+				<div class="phone-sep">
+					<i class="fa fa-phone fa-lg"></i>
+					<a href="tel:+7 (921)-903-73-55">+7 (921)-903-73-55</a>
+				</div>
+				<div class="mail-sep">
+					<i class="fa fa-globe fa-lg"></i>
+					<a href="mailto:info@plactikaspb.ru">info@plactikaspb.ru</a>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-12 col-xs-12 get-call">
+				<a href="#" id="myBtn">Запись на консультацию</a>
+			</div>
+		</div>
+	</section>
+	<section class="header-menu" style="z-index:999;">
+		<div class="container">
+			<div class="col-md-3 col-sm-4 col-xs-10 mv-desc">
+				<div class="v-desc">
+					<span class="v-name">Волох Мария</span>
+					<span class="v-sname">Александровна</span>
+				</div>
+				<div class="v-plast">
+					<span>Пластический хирург</span>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-10 mv-desc-order" style="display:none;">
+				<a href="#" id="myBtn1" class="button-ord-red">Запись на консультацию</a></div>
+				<div class="col-md-9 col-sm-12 col-xs-12 top-menu">
+					<nav class="v-menu">
+						<div class="v-header">
+							<i class="fa fa-bars fa-lg" data-mewvol="0"></i>
+						</div>
+						<div class="nav-v-menu" id="nav-menu">
+							<ul class="ul-nav">
+								<li>
+									<a {% if this.page.title == 'О хирурге' %} class="active" {% endif %} href="/about">О хирурге</a>
+								</li>
+								<li>
+									<a {% if this.page.title == 'Услуги' or this.page.title == 'Услуга' %} class="active" {% endif %} href="/services">Услуги</a>
+								</li>
+								<li>
+									<a {% if this.page.title == 'Операции' %} class="active" {% endif %} href="/operations">Реализованные операции</a>
+								</li>
+								<li>
+									<a {% if this.page.title == 'Блог' or this.page.title == 'Статья' %} class="active" {% endif %} href="/blog">Блог</a>
+								</li>
+								<li>
+									<a {% if this.page.title == 'Научная деятельность' %} class="active" {% endif %} href="/science">Научная деятельность</a>
+								</li>
+								<li>
+									<a {% if this.page.title == 'Контакты' %} class="active" {% endif %} href="/contact">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</section>
+	</header>

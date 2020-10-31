@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: id
+        searchable: true
+    title:
+        label: Название этапа
+        searchable: true

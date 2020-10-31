@@ -1,0 +1,8 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Специалист
+        searchable: true

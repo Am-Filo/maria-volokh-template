@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Slider
+
+# Model Form Field configuration
+form: $/gms/main/models/slider/fields.yaml
+
+# Model Class name
+modelClass: Gms\Main\Models\Slider
+
+# Default redirect location
+defaultRedirect: gms/main/sliders
+
+# Create page
+create:
+    title: Create Slider
+    redirect: gms/main/sliders/update/:id
+    redirectClose: gms/main/sliders
+
+# Update page
+update:
+    title: Edit Slider
+    redirect: gms/main/sliders
+    redirectClose: gms/main/sliders
+
+# Preview page
+preview:
+    title: Preview Slider

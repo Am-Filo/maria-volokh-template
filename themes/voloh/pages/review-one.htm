@@ -1,0 +1,11 @@
+title = "Отзыв"
+url = "/reviews/:slug"
+layout = "main-template"
+is_hidden = 0
+
+[reviewone]
+slug = "{{ :slug }}"
+==
+<div class="container">
+	{% component 'reviewone' %}
+</div>

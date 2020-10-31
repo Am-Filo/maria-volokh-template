@@ -1,0 +1,29 @@
+{% set service = __SELF__.getService() %}
+<section class="operations">
+	<div class="container">
+		<div class="col-md-12 title-operations">
+			<h2>Реализованые операции</h2>
+		</div>
+		<div class="clearfix"></div>
+		<div class="operations-sl">
+			{% for operations in service.operations_in_service %}
+			<div>
+				<div class="col-md-12 operation">
+					<div class="col-md-6 col-sm-6 before">
+						<div class="before-img" style="background-image: url({{ operations.before_img.path }});">
+							<a href="{{ operations.before_img.path }}" data-fancybox="operation-{{ operations.id }}" data-fancybox="images" data-caption="My caption"></a>
+						</div>
+						<p>До</p>
+					</div>
+					<div class="col-md-6 col-sm-6 after">
+						<div class="after-img" style="background-image: url({{ operations.after_img.path }});">
+							<a href="{{ operations.after_img.path }}" data-fancybox="operation-{{ operations.id }}" data-fancybox="images" data-caption="My caption"></a>
+						</div>
+						<p>После</p>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>

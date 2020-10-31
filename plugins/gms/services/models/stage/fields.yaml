@@ -1,0 +1,15 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Название этапа
+        type: text
+        span: left
+        required: true
+    stage_img:
+        label: Иконка этапа
+        type: fileupload
+        mode: image
+        span: right

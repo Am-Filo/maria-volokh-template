@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Article
+
+# Model Form Field configuration
+form: $/gms/blog/models/article/fields.yaml
+
+# Model Class name
+modelClass: Gms\Blog\Models\Article
+
+# Default redirect location
+defaultRedirect: gms/blog/articles
+
+# Create page
+create:
+    title: Create Article
+    redirect: gms/blog/articles/update/:id
+    redirectClose: gms/blog/articles
+
+# Update page
+update:
+    title: Edit Article
+    redirect: gms/blog/articles
+    redirectClose: gms/blog/articles
+
+# Preview page
+preview:
+    title: Preview Article

@@ -1,0 +1,10 @@
+{% set service = __SELF__.getService() %}
+{% if service.is_active %}
+<section class="price-service">
+	<div class="container">
+		<p class="h1">Стоимость услуги</p>
+		<div class="clearfix"></div>
+		{{ service.price_block|raw }}
+	</div>
+</section>
+{% endif %}

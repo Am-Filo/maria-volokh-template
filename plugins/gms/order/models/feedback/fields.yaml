@@ -1,0 +1,13 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: ФИО
+        type: text
+        required: true
+    phone:
+        label: Телефон
+        tyle: text
+        required: true

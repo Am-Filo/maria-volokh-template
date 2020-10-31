@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Science
+
+# Model Form Field configuration
+form: $/gms/science/models/science/fields.yaml
+
+# Model Class name
+modelClass: Gms\Science\Models\Science
+
+# Default redirect location
+defaultRedirect: gms/science/sciences
+
+# Create page
+create:
+    title: Create Science
+    redirect: gms/science/sciences/update/:id
+    redirectClose: gms/science/sciences
+
+# Update page
+update:
+    title: Edit Science
+    redirect: gms/science/sciences
+    redirectClose: gms/science/sciences
+
+# Preview page
+preview:
+    title: Preview Science

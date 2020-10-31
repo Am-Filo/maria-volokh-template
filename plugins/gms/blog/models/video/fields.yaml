@@ -1,0 +1,29 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Название видео
+        span: left
+        required: true
+    image_video:
+        label: Изображение видео
+        type: fileupload
+        mode: image
+        span: right
+        imageHeight: 255
+        imageWidth: 550
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+    url:
+        label: Url видео
+        span: left
+        required: true

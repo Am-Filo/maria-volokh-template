@@ -1,0 +1,21 @@
+{% set operations = __SELF__.getOperation() %}
+{% for operation in operations %}
+{% if operation.is_active %}
+<div>
+	<div class="col-md-12 operation">
+		<div class="col-md-6 col-sm-6 before">
+			<div class="before-img" style="background-image: url({{ operation.before_img.path }});">
+				<a href="{{ operation.before_img.path }}" data-fancybox="operation-{{ operation.id }}" data-fancybox="images" data-caption="My caption"></a>
+			</div>
+			<p>До</p>
+		</div>
+		<div class="col-md-6 col-sm-6 after">
+			<div class="after-img" style="background-image: url({{ operation.after_img.path }});">
+				<a href="{{ operation.after_img.path }}" data-fancybox="operation-{{ operation.id }}" data-fancybox="images" data-caption="My caption"></a>
+			</div>
+			<p>После</p>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endfor %}

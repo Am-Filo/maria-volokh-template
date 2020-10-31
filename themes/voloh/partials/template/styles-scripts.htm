@@ -1,0 +1,39 @@
+description = "Стили и скрипты"
+==
+<link href="{{['assets/css/main.min.css']|theme }}" rel="stylesheet">
+<script src="{{ [
+                  'assets/js/scripts.min.js',
+                  'assets/js/slick.min.js',
+                  'assets/js/jquery.fancybox.min.js',
+                  'assets/js/jquery.maskedinput.min.js',
+                  'assets/js/script.js',
+                  'assets/js/device.js'
+                  ]|theme }}">
+</script>
+{% framework extras %}
+<script>
+window.onload = function(){ 
+	var modal = document.getElementById('myModal');
+	var btn = document.getElementById("myBtn");
+	var btn1 = document.getElementById("myBtn1");
+	var span = document.getElementsByClassName("close")[0];
+
+	btn.onclick = function() {
+		modal.style.display = "flex";
+	}
+	
+	btn1.onclick = function() {
+		modal.style.display = "flex";
+	}
+	
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+	
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+};
+</script>

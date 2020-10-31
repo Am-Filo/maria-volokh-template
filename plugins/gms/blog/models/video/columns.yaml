@@ -1,0 +1,11 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Название
+        searchable: true
+    url:
+        label: Ссылка
+        searchable: true

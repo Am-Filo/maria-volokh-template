@@ -1,0 +1,9 @@
+video_in_science:
+  label: Видео
+  view:
+    list: $/gms/blog/models/video/columns.yaml
+    toolbarButtons: add|remove|create
+  manage:
+    form: $/gms/blog/models/video/fields.yaml
+    showCheckboxes: true
+    showSearch: true

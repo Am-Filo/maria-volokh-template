@@ -1,0 +1,9 @@
+links_in_option:
+  label: Ссылки
+  view:
+    list: $/gms/main/models/socialoption/columns.yaml
+    toolbarButtons: add|remove|create
+  manage:
+    form: $/gms/main/models/socialoption/fields.yaml
+    showCheckboxes: true
+    showSearch: true

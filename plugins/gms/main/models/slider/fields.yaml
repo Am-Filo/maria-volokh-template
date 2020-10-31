@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    is_active:
+        label: Активен
+        type: switch
+        span: full
+    img_slider:
+        label: Слайд
+        type: fileupload
+        mode: image
+        span: full

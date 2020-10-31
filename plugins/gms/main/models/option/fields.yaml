@@ -1,0 +1,102 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+  fields:
+      image_profile:
+          label: Фото
+          type: fileupload
+          mode: image
+          span: left
+          imageHeight: 150
+          imageWidth: 150
+          thumbOptions:
+              mode: crop
+              offset:
+                  - 0
+                  - 0
+              quality: 90
+              sharpen: 0
+              interlace: false
+              extension: auto
+          tab: 'О хирурге'
+      name:
+          label: ФИО
+          default: 'Волох Мария Александровна'
+          type: text
+          span: right
+          requaired: true
+          tab: 'О хирурге'
+      text_lower:
+          label: Текст под изображением
+          type: textarea
+          span: right
+          requaired: true
+          tab: 'О хирурге'
+      text_about:
+          label: О хирурге
+          type: textarea
+          size: large
+          span: full
+          required: true
+          tab: 'О хирурге'
+      phone_h:
+          label: Телефон
+          type: text
+          span: left
+          requaired: true
+          tab: 'Настройки header'
+      mail_h:
+          label: E-mail
+          type: text
+          span: right
+          requaired: true
+          tab: 'Настройки header'
+      domain_h:
+          label: Название сайта
+          type: text
+          span: full
+          default: 'facetransplatation.ru'
+          requaired: true
+          tab: 'Настройки header'
+      phone_b:
+          label: Телефон
+          type: text
+          span: left
+          requaired: true
+          tab: 'Настройки footer'
+      mail_b:
+          label: E-mail
+          type: text
+          span: right
+          requaired: true
+          tab: 'Настройки footer'
+      domain_b:
+          label: Название сайта
+          type: text
+          span: left
+          default: 'facetransplatation.ru'
+          requaired: true
+          tab: 'Настройки footer'
+      year_b:
+          label: Год
+          type: text
+          span: right
+          requaired: true
+          tab: 'Настройки footer'
+      contact_b:
+          label: Контакты
+          type: textarea
+          span: full
+          requaired: true
+          size: large
+          tab: 'Настройки footer'
+      links_in_option:
+          label: Социальные ссылки
+          span: full
+          oc.commentPosition: ''
+          nameForm: id
+          descriptionForm: description
+          type: partial
+          path: field_options_key
+          tab: 'Настройки footer'

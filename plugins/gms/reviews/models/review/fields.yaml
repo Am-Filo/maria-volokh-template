@@ -1,0 +1,34 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Заголовок
+        type: text
+        span: left
+        required: true
+    slug:
+        label: Slug
+        preset:
+            field: title
+            type: slug
+        span: right
+        type: text
+        required: true
+        comment: url отзыва
+    name:
+        label: ФИО
+        type: text
+        span: left
+        required: true
+    is_active:
+        label: Включить отзыв
+        type: switch
+        span: right
+    text:
+        label: Отзыв
+        type: textarea
+        size: large
+        span: full
+        required: true

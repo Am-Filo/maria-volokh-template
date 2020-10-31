@@ -1,0 +1,12 @@
+1.0.1:
+  - Add services
+  - create_services_table.php
+1.0.2:
+  - Add operations
+  - create_services_key_table.php
+1.0.3:
+  - Add stages
+  - create_stages_table.php
+1.0.4:
+  - Add team
+  - create_teams_table.php

@@ -1,0 +1,47 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Заголовок операции
+        type: text
+        span: left
+        required: true
+    is_active:
+        label: Показывать?
+        type: switch
+        span: right
+        required: true
+    before_img:
+        label: До операции
+        type: fileupload
+        mode: image
+        span: left
+        imageHeight: 250
+        imageWidth: 175
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto
+    after_img:
+        label: После операции
+        type: fileupload
+        mode: image
+        span: right
+        imageHeight: 250
+        imageWidth: 175
+        thumbOptions:
+            mode: crop
+            offset:
+                - 0
+                - 0
+            quality: 90
+            sharpen: 0
+            interlace: false
+            extension: auto

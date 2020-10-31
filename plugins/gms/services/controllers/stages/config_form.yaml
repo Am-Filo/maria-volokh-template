@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Stage
+
+# Model Form Field configuration
+form: $/gms/services/models/stage/fields.yaml
+
+# Model Class name
+modelClass: Gms\Services\Models\Stage
+
+# Default redirect location
+defaultRedirect: gms/services/stages
+
+# Create page
+create:
+    title: Create Stage
+    redirect: gms/services/stages/update/:id
+    redirectClose: gms/services/stages
+
+# Update page
+update:
+    title: Edit Stage
+    redirect: gms/services/stages
+    redirectClose: gms/services/stages
+
+# Preview page
+preview:
+    title: Preview Stage

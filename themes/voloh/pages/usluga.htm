@@ -1,0 +1,20 @@
+title = "Услуга"
+url = "/services/:slug"
+layout = "main-template"
+is_hidden = 0
+
+[services]
+slug = "{{ :slug }}"
+maxItems = 10
+
+[stages]
+
+[teams]
+==
+<div class="container">
+	{% partial "services::service" %}
+	{% component 'stages' %}
+	{% partial "services::table_price" %}
+	{% partial "services::operation" %}
+	{% component 'teams' %}
+</div>

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Operation
+
+# Model Form Field configuration
+form: $/gms/operations/models/operation/fields.yaml
+
+# Model Class name
+modelClass: Gms\Operations\Models\Operation
+
+# Default redirect location
+defaultRedirect: gms/operations/operations
+
+# Create page
+create:
+    title: Create Operation
+    redirect: gms/operations/operations/update/:id
+    redirectClose: gms/operations/operations
+
+# Update page
+update:
+    title: Edit Operation
+    redirect: gms/operations/operations
+    redirectClose: gms/operations/operations
+
+# Preview page
+preview:
+    title: Preview Operation

@@ -1,0 +1,9 @@
+operations_in_service:
+  label: Операции
+  view:
+    list: $/gms/operations/models/operation/columns.yaml
+    toolbarButtons: add|remove|create
+  manage:
+    form: $/gms/operations/models/operation/fields.yaml
+    showCheckboxes: true
+    showSearch: true

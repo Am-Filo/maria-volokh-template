@@ -1,0 +1,20 @@
+title = "Услуги"
+url = "/services"
+layout = "main-template"
+is_hidden = 0
+
+[services]
+slug = "{{ :slug }}"
+maxItems = 0
+==
+<section class="services" style="background:none;">
+	<div class="container">
+		<div class="col-md-12 title-services">
+			<h2>Услуги пластической хирургии</h2>
+		</div>
+		<div class="clearfix"></div>
+		<div class="service-one">
+			{% partial "services::services" %}
+		</div>
+	</div>
+</section>

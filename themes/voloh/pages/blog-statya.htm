@@ -1,0 +1,31 @@
+title = "Блог статья"
+url = "/blog/:slug"
+layout = "main-template"
+is_hidden = 0
+
+[article]
+slug = "{{ :slug }}"
+
+[articlepreview]
+maxItems = 3
+==
+<section class="blog-article">
+	<div class="container">
+		<div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 vl-blog-info">
+			{% partial "options::info_blog" %}
+			<hr class="hidden-lg hidden-md hidden-sm"/>
+		</div>
+		<div class="clearfix hidden-lg hidden-md hidden-sm"></div>
+		{% component 'article' %}
+	</div>
+</section>
+<section class="blog-more">
+	<div class="container">
+		<div class="col-md-12 title-blog-more-wrap">
+			<p class="title-blog-more">Читать другие статьи</p>
+			<hr class="line-blog-more" />
+		</div>
+	<div class="clearfix"></div>
+	{% component 'articlepreview' %}
+	</div>
+</section>

@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Team
+
+# Model Form Field configuration
+form: $/gms/services/models/team/fields.yaml
+
+# Model Class name
+modelClass: Gms\Services\Models\Team
+
+# Default redirect location
+defaultRedirect: gms/services/teams
+
+# Create page
+create:
+    title: Create Team
+    redirect: gms/services/teams/update/:id
+    redirectClose: gms/services/teams
+
+# Update page
+update:
+    title: Edit Team
+    redirect: gms/services/teams
+    redirectClose: gms/services/teams
+
+# Preview page
+preview:
+    title: Preview Team

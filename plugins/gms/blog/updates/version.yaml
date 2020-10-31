@@ -1,0 +1,5 @@
+1.0.1:
+  - Run table migrations
+  - create_articles_table.php
+  - create_blog_key_table.php
+  - create_videos_table.php

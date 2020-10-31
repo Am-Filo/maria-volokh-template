@@ -1,0 +1,99 @@
+title = "Главная страница"
+url = "/"
+layout = "main-template"
+is_hidden = 0
+
+[review]
+slug = "{{ :slug }}"
+maxItems = 10
+
+[operations]
+maxItems = 10
+
+[services]
+slug = "{{ :slug }}"
+maxItems = 10
+
+[sliders]
+==
+<section class="header">
+	<div class="container-fluid">
+		<div class="header-sl">
+			{% component 'sliders' %}
+		</div>
+	</div>
+	<div class="container">
+		<div class="col-md-4 col-sm-6 layreat">
+			<div class="block-1">
+				<div class="img-block">
+					<img src="{{'assets/img/header/t/1.png'|theme }}" alt=""/>
+				</div>
+				<p class="text-layr">
+					Лауреат премии
+					<br>
+					Лучшим врачам России "Призвание-2016"
+				</p>
+			</div>
+			<div class="block-2">
+				<div class="img-block">
+					<img src="{{'assets/img/header/t/2.png'|theme }}" alt=""/>
+				</div>
+				<p class="text-layr">
+					За заслуги перед отечественным
+					<br>
+					здравоохранением
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="about">
+	<div class="container">
+		<div class="col-md-8 surgeon">
+			<div class="col-md-4 av-info">
+				{% partial "options::info" %}
+			</div>
+			<div class="col-md-8 sr-about">
+				<h2>О хирурге</h2>
+				<p>
+					{{ options.text_about }}
+				</p>
+			</div>
+		</div>
+		<div class="col-md-4 reviews">
+			<div class="title-reviews">
+				<p>Отзывы</p>
+			</div>
+			<div class="clearfix"></div>
+			{% component 'review' %}
+			<div class="clearfix"></div>
+			<a href="/reviews" class="link-review">Все отзывы</a>
+		</div>
+	</div>
+</section>
+
+<section class="services">
+	<div class="container">
+		<div class="col-md-12 title-services">
+			<h2>Услуги пластической хирургии</h2>
+		</div>
+		<div class="clearfix"></div>
+		
+		<div class="services-sl">
+			{% component 'services' %}
+		</div>
+	</div>
+</section>
+
+<section class="operations">
+	<div class="container">
+		<div class="col-md-12 title-operations">
+			<h2>Проведенные операции</h2>
+		</div>
+		<div class="clearfix"></div>
+		<div class="operations-sl">
+			{% component 'operations' %}
+		</div>
+	</div>
+</section>

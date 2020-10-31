@@ -1,0 +1,12 @@
+{% set services = __SELF__.getServicesView() %}
+{% for service in services %}
+{% if service.is_active %}
+<div>
+	<div class="col-md-12 service">
+		<div class="service-wrap" style="background-image: url({{ service.service_img.path }});">
+			<a href="/services/{{ service.slug }}" class="service-link">{{ service.title }}</a>
+		</div>
+	</div>
+</div>
+{% endif %}
+{% endfor %}
